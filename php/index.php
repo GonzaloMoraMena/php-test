@@ -4,32 +4,33 @@ $username = getenv('USER_DB');
 $password = getenv('PASS_DB');
 $dbname =  getenv('DB_NAME');
 
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
 try
 {
 
-    $db = new mysqli($servername,$username,$password,$dbname);
-
-    if ($db->connect_errno) {
-        throw new Exception($db->connect_error);
+    $sql = 'SELECT name FROM lenguajes;';
+    $result = $conn -> query ($sql);
+    var_dump($result); echo '<br>';
+    echo '<h1> Modulo 3 Gonzalo Mora Conexión MySQL</h1>';
+    if ($result->num_rows > 0) {
+      echo '<h3>  Lenguajes de programación</h3></br></br>';
+      echo '<ul>';
+    
+      while($row = $result->fetch_array()) {
+        echo '<li>';
+        echo "Name: " . $row["name"];
+        echo '</li>';
+      }
+      echo '</ul>';
+    } else {
+      echo "0 results";
     }
-
-    if ($result = $db->query("SELECT * FROM lenguajes")) {
-        printf("Select returned %d rows.\n", $result->num_rows);
-
-
-        while($row = $result->fetchAssoc())
-          {
-            echo $row['name'];
-            echo "<br />";
-          }
-
-
-        /* free result set */
-        $result->close();
-    }
-
-
-    $db->close();   
+    
+    $conn->close();  
 }
 catch(Exception $e)
 {
@@ -37,4 +38,6 @@ catch(Exception $e)
         exit();
 
 }
+
+
 ?>
