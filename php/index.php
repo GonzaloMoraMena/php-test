@@ -9,7 +9,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM lenguajes;";
+$sql = "SELECT name FROM lenguajes;";
 $result = $conn->query($sql);
 echo '<h1> Modulo 3 Gonzalo Mora Conexión MySQL</h1>';
 if ($result->num_rows > 0) {
@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
   echo '<ul>';
   while($row = $result->fetch_assoc()) {
     echo '<li>';
-    echo " id: " . $row["id"]. " - Name: " . $row["name"];
+    echo "Name: " . $row["name"];
     echo '</li>';
   }
   echo '</ul>';
