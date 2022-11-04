@@ -10,13 +10,14 @@ if ($conn->connect_error) {
 }
 
 $sql = "SELECT name FROM lenguajes;";
-$result = $conn->query($sql);
+$result = mysql_query($sql) or die(mysql_error());
 var_dump($result); echo '<br>';
 echo '<h1> Modulo 3 Gonzalo Mora Conexión MySQL</h1>';
 if ($result->num_rows > 0) {
   echo '<h3>  Lenguajes de programación</h3></br></br>';
   echo '<ul>';
-  while($row = $result->fetch_assoc()) {
+
+  while($row =  mysql_fetch_array($result)) {
     echo '<li>';
     echo "Name: " . $row["name"];
     echo '</li>';
