@@ -1,0 +1,30 @@
+{
+    "registers": [
+        {
+            "description": "Caso de Prueba 0709",
+            "typeDocument": "DNI",
+            "quantity": 1,
+            "firstName": "MAURO",
+            "sellerOrderSalesforce": "5951113363",
+            "originStore": "Internet",
+            "customerOrder": null,
+            "sku": "17218453",
+            "seller": "FALABELLA",
+            "level2": "Garantía",
+            "problemReason": "Armado de Muebles",
+            "document": "98000042",
+            "level3": "Visita técnica",
+            "name": "17218453",
+            "lastName": "ESPADAS",
+            "subOrigin": null,
+            "level1": "Pedido Solicitud",
+            "sellerId": "FALABELLA_PERU",
+            "rowNum": "1",
+            "personEmail": "mauroespadas@hotmail.com",
+            "commerce": "Falabella",
+            "purchaseDate": "30/07/2022",
+            "origin": "Chat",
+            "stockKeepingUnite": "SCOOTER ELECTRICO E BEST 350W"
+        }
+    ]
+}

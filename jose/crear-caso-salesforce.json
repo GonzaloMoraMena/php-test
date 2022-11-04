@@ -1,0 +1,46 @@
+{
+    "channel": "massive-service",
+    "data": [
+        {
+            "referenceValue": "821",
+            "cases": {
+                "sellerId": "FALABELLA_PERU",
+                "level1": "Interno",
+                "description": "Carga Masiva reporte No antencion 2.11. Motivo Error operativo - No considerado en ruta sir. A la espera de reporte No atenciones actualizado 3pm con la solucion enviada por CD. Se registrara informacion en comentarios. Folio: 127369539825",
+                "workOrderDetails": {
+                    "originStore": "Internet",
+                    "purchaseDate": "26/10/2022"
+                },
+                "asset": [
+                    {
+                        "stockKeepingUnite": "T-SHIRT TS.M.NJC2. LT GREY MEL/BLACK L",
+                        "quantity": 1,
+                        "sellerSkuId": "882484717",
+                        "name": "882484717"
+                    }
+                ],
+                "seller": "FALABELLA",
+                "origin": "Interno",
+                "country": "PE",
+                "customerOrder": "127369539825",
+                "level3": "REPROGRAMACIÓN DE ENTREGA (PAQUETERÍA)",
+                "commerce": "Falabella",
+                "sellerOrder": "5363769007",
+                "level2": "Entrega"
+            },
+            "contact": {
+                "documentType": "DNI",
+                "firstName": "Faustino",
+                "document": "7681196",
+                "personEmail": "comunicacionfaustino@hotmail.com",
+                "lastName": "Urtecho Mendez",
+                "country": "PE"
+            },
+            "account": {
+                "document": "7681196",
+                "recordType": "PersonAccount",
+                "documentType": "DNI"
+            }
+        }
+    ]
+}

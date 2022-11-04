@@ -1,0 +1,20 @@
+{
+    "channel": "massive-service",
+    "data": [
+        {
+            "referenceValue": "1",
+            "cases": {
+                "caseNumber": "02919862",
+                "relatedNumber": "5008L000005jbWwQAI",
+                "relatedTo": "Id",
+                "ownerData": {
+                    "ownerId": "0058L000000iQNjQAM",
+                    "ownerType": "User"
+                },
+                "closureComment": "Prueba tipo de cierre new",
+                "status": "Closed",
+                "closureType": "Procede"
+            }
+        }
+    ]
+}

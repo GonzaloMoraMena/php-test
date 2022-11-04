@@ -1,0 +1,19 @@
+{
+   "processRequestDate": "2022-11-03T14:07:59.548Z",
+   "processId": "d53f1759-6a0a-4dae-9897-7e87651f0a41",
+   "message": [
+      "5533332930294942"
+   ],
+   "processTypeId": "1",
+   "processType": "File-Process",
+   "event": {
+      "eventTypeId": 1,
+      "eventType": "createCase"
+   },
+   "country": "PE",
+   "consumer": "SHAREPOINT",
+   "isValid": false,
+   "file": {
+      "fileUrl": "create_case_procesos_masivos_mv.xlsx"
+   }
+}

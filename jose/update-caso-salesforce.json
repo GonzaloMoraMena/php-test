@@ -1,0 +1,21 @@
+{
+    "channel": "massive-service",
+    "data": [
+      {
+        "cases": {
+          "relatedNumber": "5008L000005kPjhQAE",
+          "subOrigin": "Reclamos Indecopi",
+          "status": "En revisión",
+          "relatedTo": "Id",
+          "ownerData": {
+            "ownerType": "User",
+            "ownerId": "0058L000000OlJ4QAK"
+          },
+          "caseNumber": "02923243",
+          "typificationId": "a034W00000YDsjhQAD",
+          "description": "Prueba actualizar 3"
+        },
+        "referenceValue": "1"
+      }
+    ]
+  }
