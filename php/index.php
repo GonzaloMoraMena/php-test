@@ -12,20 +12,16 @@ if ($conn->connect_error) {
 $sql = 'SELECT name FROM lenguajes';
 $result = $conn -> query ($sql);
 var_dump($result); echo '<br>';
-echo '<h1> Modulo 3 Gonzalo Mora Conexión MySQL</h1>';
-if ($result->num_rows > 0) {
-  echo '<h3>  Lenguajes de programación</h3></br></br>';
-  echo '<ul>';
+echo '<h1> Modulo 3 Gonzalo Mora  MySQL</h1>';
+echo '<h3>  Lenguajes de programación</h3></br></br>';
+echo '<ul>';
 
-  while($row = $result->fetch_array()) {
-    echo '<li>';
-    echo "Name: " . $row["name"];
-    echo '</li>';
-  }
-  echo '</ul>';
-} else {
-  echo "0 results";
+while($row = $result->fetch_array()) {
+  echo '<li>';
+  echo "Name: " . $row["name"];
+  echo '</li>';
 }
+echo '</ul>';
 
 $conn->close();
 ?>
