@@ -4,7 +4,7 @@ $username = getenv('USER_DB');
 $password = getenv('PASS_DB');
 $dbname =  getenv('DB_NAME');
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname)or die(mysql_error());
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -13,7 +13,6 @@ try
 {
 
     $sql = 'SELECT name FROM modulo_3.lenguajes;';
-    mysql_select_db($dbname) or die(mysql_error());
     $result = $conn -> query ($sql);
     
     echo '<h1> Modulo 3 Gonzalo Mora Conexión MySQL</h1>';
