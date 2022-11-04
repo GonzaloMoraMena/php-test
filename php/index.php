@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 try
 {
 
-    $sql = 'SELECT name FROM lenguajes;';
+    $sql = 'SELECT name FROM modulo_3.lenguajes;';
     $result = $conn -> query ($sql);
     var_dump($result); echo '<br>';
     echo '<h1> Modulo 3 Gonzalo Mora Conexión MySQL</h1>';
