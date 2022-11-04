@@ -16,9 +16,9 @@ if ($result->num_rows > 0) {
   echo '<h3>  Lenguajes de programación</h3></br></br>';
   echo '<ul>';
   while($row = $result->fetch_assoc()) {
-    echo '<li>'
+    echo '<li>';
     echo " id: " . $row["id"]. " - Name: " . $row["name"];
-    echo '</li>'
+    echo '</li>';
   }
   echo '</ul>';
 } else {
