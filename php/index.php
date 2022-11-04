@@ -9,15 +9,15 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT name FROM lenguajes;";
-$result = mysql_query($sql) or die(mysql_error());
+$sql = 'SELECT name FROM lenguajes';
+$result = $conn -> query ($sql);
 var_dump($result); echo '<br>';
 echo '<h1> Modulo 3 Gonzalo Mora Conexión MySQL</h1>';
 if ($result->num_rows > 0) {
   echo '<h3>  Lenguajes de programación</h3></br></br>';
   echo '<ul>';
 
-  while($row =  mysql_fetch_array($result)) {
+  while($row = $result->fetch_array()) {
     echo '<li>';
     echo "Name: " . $row["name"];
     echo '</li>';
