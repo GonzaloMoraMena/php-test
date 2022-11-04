@@ -13,8 +13,9 @@ try
 {
 
     $sql = 'SELECT name FROM modulo_3.lenguajes;';
+    mysql_select_db($dbname) or die(mysql_error());
     $result = $conn -> query ($sql);
-     echo $result;
+    
     echo '<h1> Modulo 3 Gonzalo Mora Conexión MySQL</h1>';
     if ($result->num_rows > 0) {
       echo '<h3>  Lenguajes de programación</h3></br></br>';
